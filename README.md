@@ -20,3 +20,4 @@ To store a large number of sensitive files, it better to develop their own remot
 - [x] Master-Slave Architecture. DataNodes & NameNodes
 - [x] Google RPC framework to enable DataNode registration & HeartBeat
 - [x] editlog to avoid frequent write request to disk files, fsimage Checkpoint to accelerate reboot speed of NameNode
+- [x] A client to enable common file operations (`mkdir`, `open`, `write`, etc.)
