@@ -1,5 +1,5 @@
 # DSFS
-A distributed file system for massive small files
+A distributed file system for massive small files written in Java
 
 
 ## Motivation
@@ -13,3 +13,10 @@ FastDFS, which is written in C programming language, is an existing system reali
 Small companies tends to store their files on third-party clouds. But copywrite issue emerges. 
 
 To store a large number of sensitive files, it better to develop their own remote file systems to suit the bussiness need for small companies.
+
+
+## Building Pieces
+
+Master-Slave Architecture. DataNodes & NameNodes
+Google RPC framework to enable DataNode registration & HeartBeat
+editlog to avoid frequent write request to disk files, fsimage Checkpoint to accelerate reboot speed of NameNode
