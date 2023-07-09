@@ -1,2 +1,15 @@
 # DSFS
 A distributed file system for massive small files
+
+
+## Motivation
+
+FastDFS, which is written in C programming language, is an existing system realizing similar functionalities. However, the shortcomings are:
+
+- Slow maintanance and activeless community
+- Lots of Bugs
+- Almost impossible to view the source code to get the idea of how it works behind
+
+Small companies tends to store their files on third-party clouds. But copywrite issue emerges. 
+
+To store a large number of sensitive files, it better to develop their own remote file systems to suit the bussiness need for small companies.
