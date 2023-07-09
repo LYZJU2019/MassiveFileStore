@@ -17,6 +17,6 @@ To store a large number of sensitive files, it better to develop their own remot
 
 ## Building Pieces
 
-Master-Slave Architecture. DataNodes & NameNodes
-Google RPC framework to enable DataNode registration & HeartBeat
-editlog to avoid frequent write request to disk files, fsimage Checkpoint to accelerate reboot speed of NameNode
+- [x] Master-Slave Architecture. DataNodes & NameNodes
+- [x] Google RPC framework to enable DataNode registration & HeartBeat
+- [x] editlog to avoid frequent write request to disk files, fsimage Checkpoint to accelerate reboot speed of NameNode
