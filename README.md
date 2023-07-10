@@ -14,10 +14,16 @@ Small companies tends to store their files on third-party clouds. But copywrite 
 
 To store a large number of sensitive files, it better to develop their own remote file systems to suit the bussiness need for small companies.
 
+## Architecture
+
+## Building Instructions
+
 
 ## Building Pieces
 
 - [x] Master-Slave Architecture. DataNodes & NameNodes
-- [x] Google RPC framework to enable DataNode registration & HeartBeat
-- [x] editlog to avoid frequent write request to disk files, fsimage Checkpoint to accelerate reboot speed of NameNode
-- [x] A client to enable common file operations (`mkdir`, `open`, `write`, etc.)
+- [x] Google RPC framework to enable DataNode registration and HeartBeat from DataNode, common file operations (`mkdir`, `open`, `write`, etc.) from FS clients
+- [x] EditLog (Double buffer implementation) to record file operations in memory from all clients, avoiding frequent write to disk files
+- [x] fsimage Checkpoint to compress previous editlogs, accelerating reboot speed of NameNode
+
+## Performance
